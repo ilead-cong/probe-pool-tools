@@ -1,0 +1,4 @@
+@HD	VN:1.0	SO:unsorted
+@SQ	SN:H37Ra	LN:4419977
+@PG	ID:bowtie2	PN:bowtie2	VN:2.4.4	CL:"bowtie2-align-s --wrapper basic-0 -x bt2-index/mm10_H37Ra -t -k 100 --fast-local -S 03-align_sam/H37Ra.sam -U 02-candidates_fastq/H37Ra.fq"
+H37Ra:2000000-2500000:0_70	0	H37Ra	2000000	255	70M	*	0	0	AGCATTGCCGCCTACACCGCCACCCCCGCCGGCCATGCCCCCATGACCGCCGGCCCCGCCAGAGCCGCCG	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	AS:i:140
