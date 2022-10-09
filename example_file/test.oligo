@@ -1,6 +1,6 @@
 #20220910
 #H37Ra:2000000-2500000
-#8000:70-50
+#85.84:8000:70-50
 #bowtie2:bowtie2-align-s --wrapper basic-0 -x /bt2-index/mm10_H37Ra -t -k 100 --fast-local -S 03-align_sam/H37Ra.sam -U 02-candidates_fastq/H37Ra.fq
 #mm10;mc2-155
 #kmer:30;5
