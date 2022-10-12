@@ -21,7 +21,7 @@ tools_version = "0.0.1"
 def main():
     
     # Allow user to input parameters on command line.
-    tools_params = argparse.ArgumentParser(description=f"{tools_name} is a tools for DNA FISH probe design, tools version is {tools_version}")
+    tools_params = argparse.ArgumentParser(description=f"{tools_name} is a tools for FISH probe design, tools version is {tools_version}")
     required_params = tools_params.add_argument_group('required arguments')
     required_params.add_argument('-dm', '--designmodel', action='store', required=True,
                                help='Choose a design model; "normal" or "identify"')
