@@ -1,7 +1,7 @@
 # probe-pool-tools
 A efficient, precise and fast probe design tools for FISH.
 
-## WORK PROCESS
+## Work process
 This is the workflow of probe-tools-tools.
 
 <img src=https://github.com/ilead-cong/probe-pool-tools/blob/main/figure/probe-pool-process.png width=40% />
