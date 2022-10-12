@@ -66,7 +66,7 @@ usage: main.py [-h] -dm DESIGNMODEL -o OUTDIR -pl PROBELENGTH -ml MOVELENGTH
                [-ig IDENTIFYGENOME] [-eq EXPECTEDQUANTITY] [-kc KMERCUT]
                [-as ADDSEQ]
 
-probe-pool-tools is a tools for DNA FISH probe design, tools version is 0.0.1
+probe-pool-tools is a tools for FISH probe design, tools version is 0.0.1
 
 optional arguments:
   -h, --help            show this help message and exit
