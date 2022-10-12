@@ -57,6 +57,7 @@ For example, on the basis of the previous example, adding the ability of the pro
 ```bash
 python ./probe-pool-tools/run.py -dm identify -fd genomo_data_dir -ig mm10 -o ./ -pl 70 -ml 50  -t sample:hg19:chr1:100000-200000
 ```
+Make sure the file of hg19.fa and mm10.fa in the directory of genomo_data_dir
 ### More usage
 ```bash
 python ./probe-pool-tools/run.py -h 
