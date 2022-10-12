@@ -120,7 +120,7 @@ required arguments:
 The process outputs 6 folders and a file
 |  name     | content  |
 |  ----     | ----  |
-| 00-pregenome    | Results of genome preprocessing, including new reference genomes, Bowtie2-index, kmer databases |
+| 00-pregenome    <img width=10/>| Results of genome preprocessing, including new reference genomes, Bowtie2-index, kmer databases |
 | 01-target_fa    | The sequence of target region wiht fasta file |
 | 02-probe_fq    | candidate probes wiht fastq file |
 | 03-probe_sam    | Alignment results of candidate probes |
