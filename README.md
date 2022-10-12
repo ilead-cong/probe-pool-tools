@@ -8,6 +8,9 @@ This is the workflow of probe-tools-tools.
 
 ## Enviroment
 
+### System requirement
+This package needs to be used in a linux environment, like ubuntu, centos, and so on.
+
 ### Package list
 
 1. python
