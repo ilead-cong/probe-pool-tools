@@ -18,6 +18,7 @@ This package needs to be used in a linux environment, like ubuntu, centos, and s
 3. Biopython
 4. pandas
 5. nupack
+6. bowtie2
 
 ### New enviroment
 Use conda create a new enviroment for probe-pool-tools and activate it.
@@ -37,7 +38,7 @@ git clone https://github.com/ilead-cong/probe-pool-tools
 Most packages can be installed with conda
 
 ```bash
-conda install python pyfaidx biopython pandas
+conda install python pyfaidx biopython pandas bowtie2
 ```
 
 ### Special package installation
@@ -51,7 +52,7 @@ Design corresponding probes for a specific position of a single gene
 
 For example, using normal mode, design probes for the 100000-200000 region of human chromosome 1, the probe length is 70, and the interval is 50
 ```bash
-python ./probe-pool-tools/run.py -dm normal -f hg19.fa -o ./ -pl 70 -ml 50  -t sample:hg19:chr1:100000-200000
+python ./probe-pool-tools/run.py -d 5e-5 -dm normal -f hg19.fa -o ./ -pl 70 -ml 50  -t sample:hg19:chr1:100000-200000
 ```
 ### Identyfy
 Designing discriminative probes between multiple species
