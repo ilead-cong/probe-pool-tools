@@ -162,7 +162,7 @@ def main():
     # otp
     tsv_dir = f"{out_dir}/04-probe_tsv"
     Mk_not_dir(tsv_dir)
-    otp_file = f"./probe_pool/process/OTP_filter"
+    otp_file = f"./probe-pool-tools/probe_pool/process/OTP_filter"
     probe_tsv = f"{tsv_dir}/{sample_name}.tsv"
     tsv_cmd = f"{otp_file} {probe_sam} {probe_tsv} {target_add} {density}"
     Subp_call(f"chmod 777 {otp_file}")
