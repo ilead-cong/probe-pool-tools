@@ -19,6 +19,7 @@ This package needs to be used in a linux environment, like ubuntu, centos, and s
 4. pandas
 5. nupack
 6. bowtie2
+7. jellyfish
 
 ### New enviroment
 Use conda create a new enviroment for probe-pool-tools and activate it.
@@ -38,7 +39,7 @@ git clone https://github.com/ilead-cong/probe-pool-tools
 Most packages can be installed with conda
 
 ```bash
-conda install python pyfaidx biopython pandas bowtie2
+conda install python pyfaidx biopython pandas bowtie2 jellyfish
 ```
 
 ### Special package installation
