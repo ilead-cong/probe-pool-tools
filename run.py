@@ -118,8 +118,9 @@ def main():
     
     # make bowtie2 index
     index_dir = f"{pre_dir}/bowtie2-index"
+    index_log = f"{pre_dir}/index.log"
     Mk_not_dir(index_dir)
-    index_cmd = f"bowtie2-build {genome_file} {index_dir}/all"
+    index_cmd = f"bowtie2-build {genome_file} {index_dir}/all > {index_log} 2>&1"
     Subp_call(index_cmd)
     
     # make kmer jf
@@ -152,7 +153,8 @@ def main():
     sam_dir = f"{out_dir}/03-probe_sam"
     Mk_not_dir(sam_dir)
     probe_sam = f"{sam_dir}/{sample_name}.sam"
-    sam_cmd = f"bowtie2 -x {index_dir}/all -U {probe_set} -t -k 100 --very-sensitive-local -S {probe_sam}"
+    sam_log = f"{sam_dir}/{sample_name}_sam.log"
+    sam_cmd = f"bowtie2 -x {index_dir}/all -U {probe_set} -t -k 100 --very-sensitive-local -S {probe_sam} > {sam_log} 2>&1"
     Subp_call(sam_cmd)
     
     
