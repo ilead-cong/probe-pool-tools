@@ -101,7 +101,7 @@ def main():
     # normal
     if design_model == "normal":
         print("use normal design model")
-        Subp_call(f"ln -s {genome_fa} {pre_dir}/all.fa")
+        Subp_call(f"cp {genome_fa} {pre_dir}/all.fa")
         target_list = target.split(":")
         chrn = target_list[2]
         location = target_list[3]
@@ -119,7 +119,7 @@ def main():
     # make bowtie2 index
     index_dir = f"{pre_dir}/bowtie2-index"
     Mk_not_dir(index_dir)
-    index_cmd = f"bowtie2-bulid {genome_file} {index_dir}/all"
+    index_cmd = f"bowtie2-build {genome_file} {index_dir}/all"
     Subp_call(index_cmd)
     
     # make kmer jf
