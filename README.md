@@ -8,6 +8,9 @@ This is the workflow of probe-tools-tools.
 
 ## Enviroment
 
+### System requirement
+This package needs to be used in a linux environment, like ubuntu, centos, and so on.
+
 ### Package list
 
 1. python
@@ -15,6 +18,7 @@ This is the workflow of probe-tools-tools.
 3. Biopython
 4. pandas
 5. nupack
+6. bowtie2
 
 ### New enviroment
 Use conda create a new enviroment for probe-pool-tools and activate it.
@@ -34,7 +38,7 @@ git clone https://github.com/ilead-cong/probe-pool-tools
 Most packages can be installed with conda
 
 ```bash
-conda install python pyfaidx biopython pandas
+conda install python pyfaidx biopython pandas bowtie2
 ```
 
 ### Special package installation
@@ -48,7 +52,7 @@ Design corresponding probes for a specific position of a single gene
 
 For example, using normal mode, design probes for the 100000-200000 region of human chromosome 1, the probe length is 70, and the interval is 50
 ```bash
-python ./probe-pool-tools/run.py -dm normal -f hg19.fa -o ./ -pl 70 -ml 50  -t sample:hg19:chr1:100000-200000
+python ./probe-pool-tools/run.py -d 5e-5 -dm normal -f hg19.fa -o ./ -pl 70 -ml 50  -t sample:hg19:chr1:100000-200000
 ```
 ### Identyfy
 Designing discriminative probes between multiple species
@@ -115,15 +119,15 @@ required arguments:
 ```
 ## Result description
 The process outputs 6 folders and a file
-|  name   | content  |
-|  ----  | ----  |
-| 00-pregenome   | Results of genome preprocessing, including new reference genomes, Bowtie2-index, kmer databases |
-| 01-target_fa   | The sequence of target region wiht fasta file |
-| 02-probe_fq   | candidate probes wiht fastq file |
-| 03-probe_sam   | Alignment results of candidate probes |
-| 04-probe_tsv   | Intermediate files for probe filtering, including OTP filtering and kmer filtering |
-| 05-qc   | Intermediate file for the quality control process of the resulting probe |
-| sample.oligo   | Probe file |
+|  name     | content  |
+|  ----     | ----  |
+| 00-pregenome    <img width=10/>| Results of genome preprocessing, including new reference genomes, Bowtie2-index, kmer databases |
+| 01-target_fa    | The sequence of target region wiht fasta file |
+| 02-probe_fq    | candidate probes wiht fastq file |
+| 03-probe_sam    | Alignment results of candidate probes |
+| 04-probe_tsv    | Intermediate files for probe filtering, including OTP filtering and kmer filtering |
+| 05-qc    | Intermediate file for the quality control process of the resulting probe |
+| sample.oligo    | Probe file |
 
 ## More infomation
 If you encounter any errors or other problems, please send an email to pluaron at w2628705328@gmail.com.
